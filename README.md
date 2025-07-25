@@ -1,50 +1,50 @@
-# Berry Classifier — Распознавание Ягод с Помощью CNN
+# Berry Classifier — Recognizing Berries with CNN
 
-Это проект по созданию модели на основе сверточной нейронной сети (CNN) с использованием предобученной MobileNetV2. Модель предназначена для распознавания различных видов ягод по изображениям. Поддерживается многоклассовая классификация, и проект легко адаптируется под любые категории.
+This is a project to create a model based on a convolutional neural network (CNN) using pre-trained MobileNetV2. The model is designed to recognize different types of berries from images. Multi-class classification is supported, and the project is easily adapted to any category.
 
-# Используемые технологии:
+# Technologies used:
 
 Python 3
 TensorFlow / Keras
-MobileNetV2 (предобученная модель)
+MobileNetV2
 OpenCV, PIL, Matplotlib
 
-# Структура проекта:
+# Project structure:
 
-Папка dataset содержит изображения ягод, разложенные по подпапкам с названиями классов.
-Файл classic.py — обучение модели.
-Файл classifier_use.py — использование модели для распознавания.
-Файл image_classifierV2.h5 — сохранённая обученная модель.
-Файл README.md — описание проекта.
+The dataset folder contains images of berries, arranged in subfolders with class names.
+The classic.py file — training the model.
+The classifier_use.py file — using the model for recognition.
+The image_classifierV2.h5 file — the saved trained model.
+The README.md file — project description.
 
-# Как использовать:
+# How to use:
 
-** Обучение модели **
+** Model training **
 
-Убедитесь, что в папке dataset есть папки с изображениями для каждого класса.
-Запустите classic.py — после обучения модель сохранится как image_classifierV2.h5.
+Make sure the dataset folder contains folders with images for each class.
+Run classic.py - after training, the model will be saved as image_classifierV2.h5.
 
-** Предсказание **
+** Prediction **
 
-Убедитесь, что файл image_classifierV2.h5 существует.
-Откройте classifier_use.py.
-Внутри него вызывается функция predict_image с указанием пути к изображению, например:
+Make sure the image_classifierV2.h5 file exists.
+Open classifier_use.py.
+Inside it, the predict_image function is called with the path to the image, for example:
 predict_image('arbyz.jpg')
-После запуска модель выведет предсказанный класс и отобразит изображение с подписью.
+Once run, the model will output the predicted class and display the image with the caption.
 
-** Пример вывода: **
+** Example output: **
 
-Модель определила: watermelon
+Model identified: watermelon
 
-# Заметки:
+# Notes:
 
-- Все изображения автоматически масштабируются до размера 128x128
+- All images are automatically scaled to 128x128
 
-- Модель поддерживает как бинарную, так и многоклассовую классификацию
-  
-- Использование MobileNetV2 позволяет добиться хороших результатов даже на небольшом наборе данных
+- The model supports both binary and multi-class classification
 
-# Пример структуры папки dataset:
+- Using MobileNetV2 allows achieving good results even on a small dataset
+
+# Example of dataset folder structure:
 
 dataset
 -  raspberry
@@ -57,6 +57,6 @@ dataset
  img1.jpg
  img2.jpg
 
-# Лицензия:
+# License:
 
-Проект открыт и доступен для свободного использования. Вы можете изменять и использовать код по своему усмотрению. Указание автора приветствуется, но не обязательно.
+The project is open and freely available for use. You can modify and use the code as you wish. Attribution is welcome, but not required.
